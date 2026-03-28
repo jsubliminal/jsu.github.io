@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eao - the everything at once app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar">
+        <a href="#" class="nav-link">Home :)</a>
+        <span class="nav-center">hello world <span class="dot-red">&#9679;</span></span>
+        <a href="#about" class="nav-link">About Me</a>
+    </nav>
+    <div class="nav-sub">eao site</div>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-cats">
+            <img src="logo.png" alt="eao cat" class="cat-left">
+            <div class="hero-text">
+                <h1>eao: the<br>everything at<br>once app</h1>
+                <img src="logo.png" alt="eao cat" class="cat-center">
+                <p class="hero-desc">join me in trying to create an app the handles just about everything a student/worker needs to get stuff done all the while enjoying the app! the cat above this text is called an <strong>eao</strong>!</p>
+            </div>
+            <img src="logo.png" alt="eao cat" class="cat-right">
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Me (and the app!)</h2>
+        <p>hello! i'm jesua, a 2nd year comsci student (eugh) from UPD who is currently trying to kickstart an app that is primarily a productivity app with its unique quirks :] it <strong>originally started as a personal project</strong> as an app that i designed to cater to me, but my friends said why not try and share this amalgamation of an app to the world... so.. hello world!</p>
+        <p>the purpose of this site is to <strong class="red">find willing testers</strong> to help me catch bugs, improve on some features, and gain feedback before (trying) to launch this app full-swing!</p>
+    </section>
+
+    <!-- Beta Signup -->
+    <section id="signup" class="signup-section">
+        <h2>Become a Beta Tester</h2>
+        <p class="signup-desc">get early access to eao via TestFlight. help shape the app and earn a spot as a founding tester!</p>
+        <form id="testerForm" class="signup-form">
+            <div class="form-row">
+                <input type="text" id="testerName" placeholder="your name" required>
+                <input type="email" id="testerEmail" placeholder="your email" required>
+            </div>
+            <select id="testerDevice">
+                <option value="" disabled selected>what iPhone do you have?</option>
+                <option value="iphone-15-pro">iPhone 15 Pro / Pro Max</option>
+                <option value="iphone-15">iPhone 15 / Plus</option>
+                <option value="iphone-14-pro">iPhone 14 Pro / Pro Max</option>
+                <option value="iphone-14">iPhone 14 / Plus</option>
+                <option value="iphone-13">iPhone 13 / Mini</option>
+                <option value="iphone-se">iPhone SE</option>
+                <option value="iphone-older">iPhone 12 or older</option>
+                <option value="iphone-16">iPhone 16 series</option>
+                <option value="iphone-17">iPhone 17 series</option>
+            </select>
+            <textarea id="testerWhy" placeholder="why do you want to test eao? (optional)" rows="3"></textarea>
+            <button type="submit" class="btn-signup">
+                <span class="btn-text">Sign Up for TestFlight</span>
+                <span class="btn-loading" style="display:none;">sending...</span>
+            </button>
+            <p id="formMsg" class="form-msg"></p>
+        </form>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-header">
+                    <span>Feature</span>
+                    <span>#01</span>
+                </div>
+                <div class="feature-img placeholder-img">
+                    <span>homeView</span>
+                </div>
+                <p class="feature-name">homeView</p>
+                <div class="feature-arrow">&#8600;</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-header">
+                    <span>Feature</span>
+                    <span>#02</span>
+                </div>
+                <div class="feature-img placeholder-img">
+                    <span>chatView</span>
+                </div>
+                <p class="feature-name">chatView</p>
+                <div class="feature-arrow">&#8600;</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-header">
+                    <span>Feature</span>
+                    <span>#03</span>
+                </div>
+                <div class="feature-img placeholder-img">
+                    <span>forYouView</span>
+                </div>
+                <p class="feature-name">forYouView</p>
+                <div class="feature-arrow">&#8600;</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-header">
+                    <span>Feature</span>
+                    <span>#04</span>
+                </div>
+                <div class="feature-img placeholder-img">
+                    <span>planner</span>
+                </div>
+                <p class="feature-name">plannerView</p>
+                <div class="feature-arrow">&#8600;</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-header">
+                    <span>Feature</span>
+                    <span>#05</span>
+                </div>
+                <div class="feature-img placeholder-img">
+                    <span>eao</span>
+                </div>
+                <p class="feature-name">eao (your pet!)</p>
+                <div class="feature-arrow">&#8600;</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-header">
+                    <span>Feature</span>
+                    <span>#06</span>
+                </div>
+                <div class="feature-img placeholder-img">
+                    <span>feeding</span>
+                </div>
+                <p class="feature-name">feeding</p>
+                <div class="feature-arrow">&#8600;</div>
+            </div>
+        </div>
+
+        <div class="feature-grid feature-grid-single">
+            <div class="feature-card feature-card-wide">
+                <div class="feature-header">
+                    <span>Feature</span>
+                    <span>#07</span>
+                </div>
+                <div class="feature-img placeholder-img">
+                    <span>studyRooms</span>
+                </div>
+                <p class="feature-name">studyRooms</p>
+                <div class="feature-arrow">&#8600;</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="logo.png" alt="eao cat" class="footer-cat">
+        <div class="footer-links">
+            <a href="#about" class="footer-link red">About Me</a>
+            <a href="https://tiktok.com/@" class="footer-link red" target="_blank">TikTok</a>
+            <a href="https://instagram.com/" class="footer-link red" target="_blank">Instagram</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 eao. made with love (and a lot of coffee) by jesua.</p>
+    </footer>
+
+    <!-- Firebase SDK (modular, for tester signup) -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
